@@ -32,7 +32,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 </head>
 
-<body>
+<body class="preloading">
+		<div id="preload" class="preload-container text-center">
+				<span class="glyphicon glyphicon-repeat preload-icon rotating"></span>
+		</div>
 	<!-- banner -->
 	<div class="w3-banner-top" id="home">
 		<div class="agileinfo-dot">
@@ -780,6 +783,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script src="js/wow.min.js"></script>
 <script>
 new WOW().init();
+</script>
+<script>
+$(window).load(function() {
+    $('body').removeClass('preloading');
+    $('#preload').delay(1000).fadeOut('fast');
+});
 </script>
 
 </body>
