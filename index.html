@@ -22,6 +22,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	 rel="stylesheet">
 	<link href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz:200,300,400,700" rel="stylesheet">
 	<link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/animate.css" type="text/css" media="all" />
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
 	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all" />
 	<!-- Default-JavaScript-File -->
@@ -51,21 +52,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 
 			<div class="w3-banner-grids">
-				<div class="col-md-6 w3-banner-grid-left">
+				<div class="col-md-6 w3-banner-grid-left wow fadeInUp" data-wow-duration="2s">
 					<div class="w3-banner-img">
 						<img src="images/34.JPG" alt="img" class="img-circle">
 						<h3 class="test">Thương</h3>
 						<p class="test">Fontend Developer</p>
 					</div>
 				</div>
-				<div class="col-md-6 w3-banner-grid-right">
+				<div class="col-md-6 w3-banner-grid-right wow fadeInUp" data-wow-duration="2s">
 					<div class="w3-banner-text">
 						<h3>Mục tiêu nghề nghiệp</h3>
 						<p>Là một sinh viên mới tốt nghiệp ngành Công nghệ Thông tin,tôi hiện tìm kiếm vị trí phát triển phần mềm ,thiết kế
 							website.Tôi mong muốn áp dụng kỹ năng viết code và xử lý vấn đề để tạo nên những ứng dụng web và di động dựa trên
 							các thông số kỹ thuật có sẵn và thiết kế phù hợp.</p>
 					</div>
-					<div class=" w3-right-addres-1">
+					<div class=" w3-right-addres-1 wow fadeInUp" data-wow-duration="2s" data-wow-delay="5s" >
 						<ul class="address">
 							<li>
 								<ul class="agileits-address-text ">
@@ -108,7 +109,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- banner -->
 	<!-- /about -->
 
-	<div class="w3-about" id="about">
+	<div class="w3-about" id="about" class="wow fadeInUp" data-wow-duration="2s">
 		<div class="container">
 			<div class="w3-about-head">
 				<h3>Giới thiệu</h3>
@@ -133,7 +134,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 	<!-- //about  -->
 	<!--/ education -->
-	<div class="w3-edu-top" id="education">
+	<div class="w3-edu-top" id="education" class="wow fadeInUp" data-wow-duration="2s">
 		<div class="container">
 			<div class="w3-edu-grids">
 				<div class="col-md-12 w3-edu-grid-right">
@@ -194,7 +195,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 	<!-- //education -->
 	<!-- skills -->
-	<div class="skills" id="skills">
+	<div class="skills" id="skills" class="wow fadeInUp" data-wow-duration="2s">
 		<div class="container">
 			<div class="title-w3ls">
 				<h4>My Skills</h4>
@@ -293,7 +294,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- //skills -->
 
 	<!-- main-content -->
-	<div class="main-content">
+	<div class="main-content wow fadeInUp" data-wow-duration="2s">
 		<!-- gallery -->
 		<div class="gallery" id="projects">
 			<div class="w3-gallery-head">
@@ -684,7 +685,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 	<!-- //contact -->
 	<!-- footer -->
-	<div class="w3l_footer">
+	<div class="w3l_footer wow fadeInUp" data-wow-duration="2s">
 		<div class="container">
 
 			<div class="w3ls_footer_grids">
@@ -725,6 +726,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 		</div>
 	</div>
+
 	<!-- //footer -->
 	<script src="js/bars.js"></script>
 	<!-- start-smoth-scrolling -->
@@ -775,7 +777,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 		});
 	</script>
-
+<script src="js/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
 
 </body>
 
