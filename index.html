@@ -20,29 +20,7 @@
         <div class="header-top-agile">
             <div class="top-head-wthree text-left">
                 <div class="row top-content-info">
-                    <div class="col-sm-12 col-lg-8 top-content-left">
-                        <div class="land-gd">
-                            <div class="hd-sc-one">
-                                <div class="land-content">
-                                    <p><img src="img/logo.jpg" width="50px" /> Company</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="land-gd">
-                            <div class="hd-sc-one">
-                                <div class="land-image text-center">
-                                    <i class="fa fa-map-signs"></i>
-                                </div>
-                                <div class="land-content">
-                                    <p>104-106 Hồ Văn Huê, Phường 9, Q.Phú Nhuận, TP.HCM</p>
-
-                                </div>
-                                <div class="clearfix"></div>
-                            </div>
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                    <div class="col-sm-12 col-lg-4 top-content-right">
+                    <div class="col-sm-12 col-md-6">
                         <ul class="header-info">
                             <li>
                                 <i class="fa fa-envelope"></i> <a href="mailto:info@example.com">mail@example.com</a>
@@ -53,35 +31,15 @@
 
                         </ul>
                     </div>
-
-                </div>
-            </div>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-12 col-md-6 logo">
-                        <h1>
-                            <a class="navbar-brand" href="index.html">
-                                <img src="img/logo.jpg" width="122px" />Lock</a>
-                        </h1>
+                    <div class="col-md-6 login-right-img text-md-center">
+                        <a class="request " href="view/login.html">Đăng nhập</a>
+                        <a class="request " href="view/register.html">Đăng ký</a>
                     </div>
-                    <div class="col-md-3 top-social-icons text-md-right">
-                        <ul class="social-icons">
-                            <li class="mr-1"><a href="#"><span class="fab fa-facebook"></span></a></li>
-                            <li class="mx-1"><a href="#"><span class="fab fa-twitter"></span></a></li>
-                            <li class="mr-1"><a href="#"><span class="fab fa-instagram"></span></a></li>
-                            <li class="mx-1"><a href="#"><span class="fab fa-google-plus"></span></a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-3 login-right-img text-md-center">
-                        <a class="request text-uppercase" href="view/login.html">Đăng nhập</a>
-                        <a class="request text-uppercase" href="view/register.html">Đăng ký</a>
-                    </div>
-
 
                 </div>
             </div>
             <div class="header-bg" data-toggle="sticky-onscroll">
-                <div class="container">
+                <div class="container-fluid">
                     <header>
                         <nav class="navbar navbar-expand-lg navbar-light top-navbar">
                             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
@@ -90,8 +48,10 @@
                                 <span class="navbar-toggler-icon"></span>
                             </button>
 
-                            <div class="collapse navbar-collapse pt-2" id="navbarSupportedContent">
-                                <ul class="navbar-nav mr-lg-auto text-left">
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <a class="navbar-brand text-sm-center text-md-left" href="#"><img src="img/logo.jpg"
+                                        alt="" width="120px" height="30px"></a>
+                                <ul class="navbar-nav mr-md-auto text-left">
                                     <li class="nav-item active">
                                         <a class="nav-link" href="index.html">Trang Chủ
                                             <span class="sr-only">(current)</span>
@@ -118,29 +78,53 @@
                                     <li class="nav-item">
                                         <a class="nav-link" href="view/contact.html">Liên Hệ</a>
                                     </li>
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" id="ShoppingcartDropdown" role="button"
-                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="fa fa-shopping-basket"><span>10</span></i>
+                                </ul>
+                                <ul class="navbar-nav text-right">
+                                    <div class="navbar-right">
+                                       <a class="nav-link dropdown-toggle" id="cart"
+                                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fa fa-shopping-cart"><span class="badge">3</span></i>
                                         </a>
-                                        <div class="dropdown-menu" aria-labelledby="ShoppingcartDropdown">
-                                            <div class="container">
-                                                <div class="row">
-                                                    <div class="col-md-12">
-                                                        <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i>
-                                                                <b>4</b></span></h4>
-                                                        <p><a href="#">Product 1</a> <span class="price">$15</span></p>
-                                                        <p><a href="#">Product 2</a> <span class="price">$5</span></p>
-                                                        <p><a href="#">Product 3</a> <span class="price">$8</span></p>
-                                                        <p><a href="#">Product 4</a> <span class="price">$2</span></p>
-                                                        <hr>
-                                                        <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
-                                                    </div>
+                                        <div class="shopping-cart">
+                                            <div class="shopping-cart-header">
+                                                <i class="fa fa-shopping-cart cart-icon"></i><span class="badge">3</span>
+                                                <div class="shopping-cart-total">
+                                                    <span class="lighter-text">Total:</span>
+                                                    <span class="main-color-text total">30.000.000 VNĐ</span>
                                                 </div>
-
                                             </div>
+                                            <!--end shopping-cart-header -->
+                                            <ul class="shopping-cart-items">
+                                                <li class="clearfix">
+                                                    <img src="img/SanPham/sp_3.jpg"
+                                                        alt="item1" />
+                                                    <span class="item-name">Khóa vân tay (bluetooth)</span>
+                                                    <span class="item-price">10.000.000 VNĐ</span>
+                                                    <span class="item-quantity">số lượng: 01</span>
+                                                </li>
+
+                                                <li class="clearfix">
+                                                    <img src="img/SanPham/sp_2.jpg"
+                                                        alt="item1" />
+                                                    <span class="item-name">Khóa vân tay DESSMANN</span>
+                                                    <span class="item-price">10.000.000 VNĐ</span>
+                                                    <span class="item-quantity">số lượng: 01</span>
+                                                </li>
+
+                                                <li class="clearfix">
+                                                    <img src="img/SanPham/sp_1.jpg"
+                                                        alt="item1" />
+                                                    <span class="item-name">Khóa vân điện tử DESSMANN(Gold)</span>
+                                                    <span class="item-price">10.000.000 VNĐ</span>
+                                                    <span class="item-quantity">số lượng: 01</span>
+                                                </li>
+                                            </ul>
+
+                                            <a href="#" class="button">Đặt hàng <i class="fa fa-chevron-right"></i></a>
                                         </div>
-                                    </li>
+                                        <!--end shopping-cart -->
+                                    </div>
+                                    <!--end navbar-right -->
                                 </ul>
                                 <form action="#" method="post" class="form-inline my-2 my-lg-0 header-search">
                                     <input class="form-control" type="search" placeholder="Search here..." name="Search"
@@ -682,7 +666,7 @@
     <!-- Footer -->
     <section id="footer">
         <div class="container">
-            <div class="row text-center text-xs-center text-sm-left text-md-left content_footer">
+            <div class="row text-left text-xs-left text-sm-left text-md-left content_footer">
                 <div class="col-xs-12 col-sm-4 col-md-4">
                     <h5>THÔNG TIN LIÊN HỆ</h5>
                     <ul class="list-unstyled quick-links">

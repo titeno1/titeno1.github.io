@@ -5,7 +5,7 @@ $(document).ready(function () {
             scrollTop: $(this.hash).offset().top
         }, 900);
     });
-   
+
     //nav
     $(".dropdown").hover(
         function () {
@@ -14,6 +14,16 @@ $(document).ready(function () {
         },
         function () {
             $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true, true).fadeOut("400");
+            $(this).toggleClass('open');
+        }
+    );
+    $(".dropdown").click(
+        function () {
+            $('.dropdown-menu', this).not('.dropdown-menu').stop(true, true).fadeIn("400");
+            $(this).toggleClass('open');
+        },
+        function () {
+            $('.dropdown-menu', this).not(' .dropdown-menu').stop(true, true).fadeOut("400");
             $(this).toggleClass('open');
         }
     );
@@ -26,7 +36,10 @@ $(document).ready(function () {
             // Variables privadas
             var links = this.el.find('.link');
             // Evento
-            links.on('click', { el: this.el, multiple: this.multiple }, this.dropdown)
+            links.on('click', {
+                el: this.el,
+                multiple: this.multiple
+            }, this.dropdown)
         }
 
         Accordion.prototype.dropdown = function (e) {
@@ -44,6 +57,29 @@ $(document).ready(function () {
 
         var accordion = new Accordion($('#accordion'), false);
     });
+    //shopping cart
+    $(document).click(function () {
+        var $item = $(".shopping-cart");
+        if ($item.hasClass("active")) {
+            $item.removeClass("active");
+        }
+    });
+
+    $('.shopping-cart').each(function () {
+        var delay = $(this).index() * 50 + 'ms';
+        $(this).css({
+            '-webkit-transition-delay': delay,
+            '-moz-transition-delay': delay,
+            '-o-transition-delay': delay,
+            'transition-delay': delay
+        });
+    });
+    $('#cart').click(function (e) {
+        e.stopPropagation();
+        $(".shopping-cart").toggleClass("active");
+    });
+
+
 
 
     $(document).ready(function () {
@@ -54,8 +90,7 @@ $(document).ready(function () {
             if (scrollElement.scrollTop() >= stickyTop) {
                 stickyWrapper.height(stickyHeight);
                 sticky.addClass("is-sticky");
-            }
-            else {
+            } else {
                 sticky.removeClass("is-sticky");
                 stickyWrapper.height('auto');
             }
@@ -163,4 +198,3 @@ $(document).ready(function () {
 
 
 })
-
