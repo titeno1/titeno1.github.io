@@ -73,7 +73,44 @@
 
                                     <!-- Hamburger -->
 
-                                    <div class="shopping_cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></div>
+                                    <div class="shopping_cart"><i class="fa fa-shopping-cart" id="cart" aria-hidden="true"><span
+                                                class="badge">3</span></i>
+                                        <div class="shopping-cart">
+                                            <div class="shopping-cart-header">
+                                                <i class="fa fa-shopping-cart cart-icon"></i><span class="badge">3</span>
+                                                <div class="shopping-cart-total">
+                                                    <span class="lighter-text">Total:</span>
+                                                    <span class="main-color-text total">30.000.000 VNĐ</span>
+                                                </div>
+                                            </div>
+                                            <!--end shopping-cart-header -->
+                                            <ul class="shopping-cart-items">
+                                                <li class="clearfix">
+                                                    <img src="img/SanPham/sp_3.jpg" alt="item1" />
+                                                    <span class="item-name">Khóa vân tay (bluetooth)</span>
+                                                    <span class="item-price">10.000.000 VNĐ</span>
+                                                    <span class="item-quantity">số lượng: 01</span>
+                                                </li>
+
+                                                <li class="clearfix">
+                                                    <img src="img/SanPham/sp_2.jpg" alt="item1" />
+                                                    <span class="item-name">Khóa vân tay DESSMANN</span>
+                                                    <span class="item-price">10.000.000 VNĐ</span>
+                                                    <span class="item-quantity">số lượng: 01</span>
+                                                </li>
+
+                                                <li class="clearfix">
+                                                    <img src="img/SanPham/sp_1.jpg" alt="item1" />
+                                                    <span class="item-name">Khóa vân điện tử DESSMANN(Gold)</span>
+                                                    <span class="item-price">10.000.000 VNĐ</span>
+                                                    <span class="item-quantity">số lượng: 01</span>
+                                                </li>
+                                            </ul>
+
+                                            <a href="#" class="button">Đặt hàng <i class="fa fa-chevron-right"></i></a>
+                                        </div>
+                                        <!--end shopping-cart -->
+                                    </div>
                                     <div class="hamburger menu_mm">
                                         <i class="fa fa-bars menu_mm" aria-hidden="true"></i>
                                     </div>
@@ -142,19 +179,19 @@
                     <!-- Home Slider Item -->
                     <div class="owl-item">
                         <div class="home_slider_background" style="background-image:url(img/thumb.png)"></div>
-                        
+
                     </div>
 
                     <!-- Home Slider Item -->
                     <div class="owl-item">
                         <div class="home_slider_background" style="background-image:url(img/thumb.jpg)"></div>
-                        
+
                     </div>
 
                     <!-- Home Slider Item -->
                     <div class="owl-item">
                         <div class="home_slider_background" style="background-image:url(img/banner_thumb.png)"></div>
-                        
+
                     </div>
 
                 </div>
@@ -657,44 +694,78 @@
         </div>
 
         <!-- Footer -->
-        <section id="footer">
+
+        <footer class="footer">
+            <div class="footer_background" style="background-image:url(images/footer_background.png)"></div>
             <div class="container">
-                <div class="row text-left text-xs-left text-sm-left text-md-left content_footer">
-                    <div class="col-xs-12 col-sm-4 col-md-4">
-                        <h5>THÔNG TIN LIÊN HỆ</h5>
-                        <ul class="list-unstyled quick-links">
-                            <li><a href="javascript:void();"><i class="fa fa-map-marked"></i>104-106 Hồ Văn Huê, Phường
-                                    9,
-                                    Q.Phú
-                                    Nhuận, TP.HCM</a></li>
-                            <li><a href="javascript:void();"><i class="fa fa-phone-square"></i>028 6276 8028</a></li>
-                            <li><a href="javascript:void();"><i class="fa fa-envelope"></i>info@dmtsmarthome.vn</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-xs-12 col-sm-4 col-md-4">
-                        <h5>MENU</h5>
-                        <ul class="list-unstyled quick-links">
-                            <li><a href="index.html"><i class="fa fa-angle-double-right"></i>Trang CHủ</a></li>
-                            <li><a href="view/about.html"><i class="fa fa-angle-double-right"></i>Giới Thiệu</a></li>
-                            <li><a href="view/product.html"><i class="fa fa-angle-double-right"></i>Sản Phẩm</a></li>
-                            <li><a href="view/new.html"><i class="fa fa-angle-double-right"></i>Tin Tức</a></li>
-                            <li><a href="view/contact.html"><i class="fa fa-angle-double-right"></i>Liên Hệ</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-xs-12 col-sm-4 col-md-4">
-                        <h5>Kết nối với chúng tôi</h5>
-                        <ul class="list-unstyled list-inline social ">
-                            <li class="list-inline-item"><a href="javascript:void();"><i class="fab fa-facebook"></i></a></li>
-                            <li class="list-inline-item"><a href="javascript:void();"><i class="fab fa-twitter"></i></a></li>
-                            <li class="list-inline-item"><a href="javascript:void();"><i class="fab fa-instagram"></i></a></li>
-                            <li class="list-inline-item"><a href="javascript:void();"><i class="fab fa-google-plus"></i></a></li>
-                            <li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a></li>
-                        </ul>
+                <div class="row footer_row">
+                    <div class="col">
+                        <div class="footer_content">
+                            <div class="row">
+
+                                <div class="col-lg-4 footer_col">
+
+                                    <!-- Footer About -->
+                                    <div class="footer_section footer_about">
+                                        <div class="footer_logo_container">
+                                            <a href="#">
+                                                <div class="footer_logo_text">DMT<span>Lock</span></div>
+                                            </a>
+                                        </div>
+                                        <div class="footer_about_text">
+                                            <p>Lorem ipsum dolor sit ametium, consectetur adipiscing elit.</p>
+                                        </div>
+                                        <div class="footer_social">
+                                            <ul>
+                                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-lg-4 footer_col">
+
+                                    <!-- Footer Contact -->
+                                    <div class="footer_section footer_contact">
+                                        <div class="footer_title">Liên Hệ</div>
+                                        <div class="footer_contact_info">
+                                            <ul>
+                                                <li>Email: info@dmtsmarthome.vn</li>
+                                                <li>Phone: 028 6276 8028</li>
+                                                <li>104-106 Hồ Văn Huê, Phường 9, Q.Phú Nhuận, TP.HCM</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-lg-4 footer_col">
+
+                                    <!-- Footer links -->
+                                    <div class="footer_section footer_links">
+                                        <div class="footer_title">Menu</div>
+                                        <div class="footer_links_container">
+                                            <ul>
+                                                <li><a href="index.html">Trang chủ</a></li>
+                                                <li><a href="about.html">Giới Thiệu</a></li>
+                                                <li><a href="#">Sản Phẩm</a></li>
+                                                <li><a href="courses.html">Tin Tức</a></li>
+                                                <li><a href="contact.html">Liên Hệ</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- ./Footer -->
+        </footer>
     </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>

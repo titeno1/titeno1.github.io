@@ -351,7 +351,7 @@ section
 	font-size: 36px;
 	font-weight: 700;
 	line-height: 0.75;
-	color: #384158;
+	color: orange;
 	vertical-align: middle;
 	margin-left: 7px;
 	-webkit-transition: all 200ms ease;
@@ -362,7 +362,7 @@ section
 }
 .logo_text span
 {
-	color: orange;
+	color: #384158;
 }
 .header.scrolled .logo
 {
@@ -1052,8 +1052,8 @@ input[type="search"] {
     background: rgba(255, 255, 255, 0.9);
     width: 330px;
     position: absolute;
-    top: 55px;
-    right: 185px;
+    top: 47px;
+    right: -60px;
     border-radius: 3px;
     padding: 20px;
     overflow: hidden;
@@ -2077,81 +2077,152 @@ ul {
 }
 
 /*footer*/
-#footer {
-    background: #000 !important;
+.footer
+{
+	display: block;
+	position: relative;
+	width: 100%;
+	background: #1e2434;
+	padding-top: 94px;
 }
-
-.content_footer {
-    padding-top: 20px;
+.footer_background
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
 }
-
-#footer ul {
-    margin-left: 10px;
+.footer_content
+{
+	padding-bottom: 53px;
 }
-
-#footer h5 {
-    padding-left: 10px;
-    border-left: 3px solid #eeeeee;
-    padding-bottom: 6px;
-    margin-bottom: 20px;
-    color: #ffffff;
+.footer_logo_text
+{
+	font-family: 'Roboto Slab', serif;
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 0.75;
+	color: orange;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
 }
-
-#footer a {
-    color: #ffffff;
-    text-decoration: none !important;
-    background-color: transparent;
-    -webkit-text-decoration-skip: objects;
+.footer_logo_text span
+{
+	color: #000;
 }
-
-#footer ul.social li {
-    padding: 3px 0;
-    margin-left: 10px;
+.footer_title
+{
+	font-family: 'Roboto Slab', serif;
+	font-size: 18px;
+	font-weight: 700;
+	color: #FFFFFF;
+	line-height: 0.75;
 }
-
-#footer ul.social li a i {
-    margin-right: 5px;
-    font-size: 25px;
-    -webkit-transition: .5s all ease;
-    -moz-transition: .5s all ease;
-    transition: .5s all ease;
+.footer_logo_container
+{
+	margin-top: -14px;
 }
-
-#footer ul.social li:hover a i {
-    font-size: 30px;
-    margin-top: -10px;
+.footer_about_text
+{
+	margin-top: 31px;
 }
-
-#footer ul.social li a,
-#footer ul.quick-links li a {
-    color: #ffffff;
+.footer_about_text p
+{
+	color: #FFFFFF;
 }
-
-#footer ul.social li a:hover {
-    color: #eeeeee;
+.footer_social
+{
+	margin-top: 23px;
 }
-
-#footer ul.quick-links li {
-    padding: 3px 0;
-    -webkit-transition: .5s all ease;
-    -moz-transition: .5s all ease;
-    transition: .5s all ease;
+.footer_social ul li
+{
+	display: inline-block;
+	width: 45px;
+	height: 45px;
+	background: #4b505d;
+	border-radius: 50%;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
 }
-
-/* #footer ul.quick-links li:hover {
-    padding: 3px 0;
-    margin-left: 5px;
-    font-weight: 700;
-} */
-
-#footer ul.quick-links li a i {
-    margin-right: 5px;
+.footer_social ul li:not(:last-child)
+{
+	margin-right: 6px;
 }
-
-#footer ul.quick-links li:hover a i {
-    font-weight: 700;
+.footer_social ul li a
+{
+	display: block;
+	position: relative;
+	text-align: center;
 }
-
+.footer_social ul li a i
+{
+	color: #FFFFFF;
+	line-height: 45px;
+}
+.footer_social ul li:hover
+{
+	background: orange;
+}
+.footer_contact
+{
+	padding-left: 36px;
+}
+.footer_contact_info
+{
+	margin-top: 33px;
+}
+.footer_contact_info ul li
+{
+	font-size: 14px;
+	font-weight: 400;
+	color: #b5b8be;
+}
+.footer_contact_info ul li:not(:last-child)
+{
+	margin-bottom: 15px;
+}
+.footer_links
+{
+	padding-left: 80px;
+}
+.footer_links_container ul
+{
+	columns: 2;
+	-webkit-columns: 2;
+	-moz-columns: 2;
+}
+.footer_links_container
+{
+	margin-top: 33px;
+}
+.footer_links_container ul li a
+{
+	font-size: 14px;
+	color: #b5b8be;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+.footer_links_container ul li:not(:last-child)
+{
+	margin-bottom: 15px;
+}
+.footer_links_container ul li a:hover
+{
+	color: orange;
+}
 /*contact*/
 .detail_contact {
     margin-top: 50px;
@@ -2380,6 +2451,8 @@ ul {
     color: #CF0C68;
     margin-bottom: 0.2em;
 }
+
+
 
 .get-touch-top p {
     font-size: 1.05em;
@@ -2650,10 +2723,6 @@ ul {
         margin: 0;
         justify-content: center;
     }
-
-    .navbar-light .navbar-nav .nav-link {
-        font-size: 14px;
-    }
 }
 
 @media(max-width:1080px) {
@@ -2679,110 +2748,11 @@ ul {
 }
 
 @media(max-width:1024px) {
-    h3.tittle {
-        font-size: 16px;
-    }
-
-    .main_grid_contact {
-        padding: 7em 2em;
-    }
-
-    .inner-page {
-        min-height: 200px;
-    }
-
-    .login-right-img {
-        height: 30px;
-    }
-
-    a.navbar-brand {
-        font-size: 1.2em;
-        margin-top: 0.3em;
-    }
-
-    .freebies figure {
-        max-height: 339px;
-        margin: 0;
-    }
-
-    .about-in .card {
-        padding: 2em 0.5em;
-    }
-
-    .navbar-light .navbar-nav .nav-link {
-        padding: 0.1em 1em;
-        color: #fff;
-        background: transparent;
-        font-size: 11px;
-        letter-spacing: 1px;
-        font-weight: 800;
-        text-transform: uppercase;
-    }
+   
 }
 
 @media(max-width:991px) {
-    .footer-grid-w3ls {
-        margin-top: 1.5em;
-    }
-
-    .about-in {
-        margin-top: 1em;
-    }
-
-    .team-info {
-        float: left;
-        width: 50%;
-        margin-bottom: 2em;
-    }
-
-    .progress-one {
-        margin-top: 1em;
-    }
-
-    .freebies figure {
-        max-height: 324px;
-        margin: 0;
-    }
-
-    .address-info {
-        margin-top: 2em;
-    }
-
-    .main_grid_contact {
-        padding: 5em 2em;
-    }
-
-    .newsright {
-        margin: 0 auto;
-        width: 70%;
-    }
-
-    a.request {
-        padding: 0 15px;
-    }
-
-    .navbar-nav .dropdown-menu {
-        text-align: center;
-    }
-
-    .top-content-left {
-        padding: 0;
-        margin: 0.5em 0;
-        text-align: center;
-    }
-
-    .nav.nav-tabs {
-        border-bottom: 0;
-        border-right: 1px solid transparent;
-        display: block;
-        margin-right: 20px;
-        width: 100% !important
-    }
-
-    .horizontal-tabs .nav-tabs {
-        width: 100%;
-        padding: 0
-    }
+   
 }
 
 @media(max-width:900px) {
@@ -2793,55 +2763,15 @@ ul {
 }
 
 @media(max-width:800px) {
-    .main_grid_contact {
-        padding: 5em 2em;
-    }
-
-    .freebies figure {
-        max-height: 264px;
-        margin: 0;
-    }
-
-    .top-social-icons {
-        padding: 0;
-        margin-top: 5px;
-    }
+   
 }
 
 @media(max-width:768px) {
-    .freebies figure {
-        max-height: 250px;
-        margin: 0;
-    }
-
-    .stats_info {
-        text-align: center;
-        padding: 2em 0;
-    }
-
-    .bottom-bg p {
-        width: 100%;
-    }
+  
 }
 
 @media(max-width:767px) {
-    a.navbar-brand {
-        font-size: 1.2em;
-        margin: 0.3em 0;
-    }
-
-    .address-right {
-        text-align: center !important;
-        margin-top: 1em;
-    }
-
-    .main_grid_contact {
-        padding: 3em 2em;
-    }
-
-    .carousel-item img {
-        height: 250px;
-    }
+   
 }
 
 @media(max-width:736px) {
@@ -2856,18 +2786,7 @@ ul {
 }
 
 @media(max-width:667px) {
-    .middle-grids .card-body {
-        padding: 6em 2em;
-        margin-bottom: 1em;
-    }
-
-    .inner-page {
-        min-height: 160px;
-    }
-
-    .carousel-item img {
-        height: 250px;
-    }
+   
 }
 
 @media(max-width:640px) {
@@ -2895,315 +2814,27 @@ ul {
 }
 
 @media(max-width:568px) {
-    .land-content h4 {
-        font-size: 1em;
-    }
-
-    ul.header-info-w3ls li:nth-child(2) {
-        margin: 0 0.5em;
-    }
-
-    .top-head-wthree {
-        padding: 0.3em 0.5em;
-        display: none;
-    }
-
-    ul.header-info-w3ls li {
-        font-size: 0.95em;
-    }
-
-    .newsright {
-        margin: 0 auto;
-        width: 90%;
-    }
-
-    .about-in .card h5.card-title {
-        font-size: 1.4em;
-    }
-
-    h4.sub-tittle {
-        margin: 1.2em 0 0 0;
-        font-size: 0.8em;
-        color: #ffc107;
-        letter-spacing: 1px;
-    }
-
-    .carousel-item img {
-        height: 250px;
-    }
-
-    .top-social-icons {
-        text-align: center;
-    }
-
-    .w3ls_footer_grid_left {
-        padding-bottom: 10px;
-    }
-
-    .banner_img_item {
-        justify-content: center;
-    }
+    
 }
 
 @media(max-width:480px) {
-    h2 {
-        font-size: 34px;
-    }
-
-    h2 {
-        top: 20px;
-    }
-
-    h4.title-main {
-        font-size: 20px;
-    }
-
-    .serv1 h4 {
-        font-size: 18px;
-    }
-
-    .serv1 h5 {
-        font-size: 20px;
-    }
-
-    .serv2 h5 {
-        font-size: 20px;
-    }
-
-    .serv3 h5 {
-        font-size: 20px;
-    }
-
-    .serv4 h5 {
-        font-size: 20px;
-    }
-
-    .serv2 span.fa {
-        font-size: 30px;
-    }
-
-    .serv3 span.fa {
-        font-size: 30px;
-    }
-
-    .serv4 span.fa {
-        font-size: 30px;
-    }
-
-    p.dark-grey-text {
-        padding: 15px;
-
-    }
-
-    .contact-agileits-title h3 {
-        font-size: 25px;
-    }
-
-    .carousel-caption {
-        min-height: 405px !important;
-    }
-
-    .carousel-caption {
-        padding-top: 4em;
-    }
-
-    .banner {
-        min-height: 461px;
-    }
-
-    .aboutus h3 {
-        font-size: 25px;
-        margin-bottom: 25px;
-    }
-
-    .assistance h3 {
-        font-size: 25px;
-        margin-bottom: 25px;
-    }
-
-    .news h3 {
-        font-size: 25px;
-        margin-bottom: 25px;
-    }
-
-    h3.title-agile.about.text-center {
-        font-size: 25px;
-        margin-bottom: 25px;
-    }
-
-    .testimonials h3 {
-        font-size: 25px;
-        margin-bottom: 25px;
-    }
-
-    .aboutus {
-        padding: 2em 0em;
-    }
-
-    .assistance {
-        padding: 2em 0em;
-    }
-
-    .news {
-        padding: 2em 0em;
-    }
-
-    .section-w3ls.agileits-gallery {
-        padding: 2em 0em;
-    }
-
-    .testimonials {
-        padding: 2em 0em;
-    }
-
-    .banner-btm-g1 {
-        padding: 2em;
-    }
-
-    .avatar h5 {
-        padding: 1em;
-    }
-
-    .avatar1 h5 {
-        padding: 1em;
-    }
-
-    .contact-agileits-title {
-        padding: 1em;
-    }
-
-    .get-touch-bottom input[type="text"] {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .no-mar {
-        margin-bottom: 10px;
-    }
-
-    .get-touch-bottom input[type="email"] {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .get-touch-bottom input[type="submit"] {
-        width: 100%;
-    }
-
-    .carousel-control.right {
-        top: -140px;
-    }
-
-    .carousel-control.left {
-        top: -140px;
-    }
-
-    .wthree_footer p {
-        padding: 1em;
-        font-size: 10px;
-        letter-spacing: 1px;
-    }
-
-    .navbar-toggle {
-        margin-top: 0;
-    }
-
-    h3.tittle {
-        font-size: 2.5em;
-    }
-
-    .bottom-last {
-        min-height: 200px;
-    }
-
-    .stats_info i {
-        font-size: 2em;
-    }
-
-    .stats_info p {
-        font-size: 2.5em;
-    }
-
-    .carousel-item img {
-        height: 200px;
-    }
-
-    .top-social-icons {
-        padding-bottom: 10px;
-    }
-
-    .social-icons {
-        margin-top: 15px !important;
-    }
+    
 }
 
 @media(max-width:440px) {
-    h3.tittle {
-        font-size: 2.2em;
-    }
-
-    a.navbar-brand {
-        font-size: 1em;
-        margin: 0.3em 0;
-    }
-
-    .team-content h3 {
-        font-size: 1.2em;
-    }
-
-    .top-content-right {
-        padding: 0;
-    }
-
-    .stats_info i {
-        margin-top: 0.5em;
-    }
-
-    .freebies figure {
-        max-height: 231px;
-        margin: 0;
-    }
-
-    .cont-btn a {
-        padding: 0.4em 1.5em;
-        font-size: 0.8em;
-    }
-
-    .carousel-item img {
-        height: 150px;
-    }
-
-    #product {
-        margin-top: 2rem;
-    }
-
-    .content_footer h5 {
-        border-left: 2px solid orange;
-    }
-
-    .content_footer h5 {
-        border-left: 2px solid orange !important;
-    }
+   
 
 
 }
 
 @media (max-width: 576px) {
 
-    .new_product,
-    .top_product {
-        display: none;
-    }
+  
 
 }
 
 @media (max-width:767px) {
-    #footer h5 {
-        padding-left: 0;
-        border-left: transparent;
-        padding-bottom: 0px;
-        margin-bottom: 10px;
-    }
+   
 }
 
 
