@@ -12,7 +12,9 @@
     <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
     <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
     <link rel="stylesheet" href="css/imagehover.min.css">
+    <link rel="stylesheet" href="css/sidebar.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/dropdown.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 
@@ -57,17 +59,82 @@
                         <div class="col">
                             <div class="header_content d-flex flex-row align-items-center justify-content-start">
                                 <div class="logo_container">
-                                    <a href="#">
+                                    <a href="index.html">
                                         <div class="logo_text">DMT<span>Lock</span></div>
                                     </a>
                                 </div>
                                 <nav class="main_nav_contaner ml-auto">
                                     <ul class="main_nav">
-                                        <li class="active"><a href="#">Trang chủ</a></li>
-                                        <li><a href="about.html">Giới Thiệu</a></li>
-                                        <li><a href="courses.html">Sản Phẩm</a></li>
-                                        <li><a href="blog.html">Tin Tức</a></li>
-                                        <li><a href="contact.html">Liên Hệ</a></li>
+                                        <li class="active"><a href="index.html">Trang chủ</a></li>
+                                        <li><a href="view/about.html">Giới Thiệu</a></li>
+                                        <li class="dropdown">
+                                            <a class="title_sp" id="title_sp">Sản Phẩm</a>
+                                            <div class="content_menusp">
+                                                <div class="container">
+                                                    <!--end menu products -->
+                                                    <ul class="content_menusp-items">
+                                                        <div class="row">
+                                                            <div class="col-md-4">
+                                                                <li class="clearfix">
+                                                                    <p class="title_catg">KHÓA CỬA ĐIỆN TỬ</p>
+                                                                    <ul>
+                                                                        <li><a href="#">Khóa điện tử SAMSUNG (Korea)</a></li>
+                                                                        <li><a href="#">Khóa điện tử GATEMAN
+                                                                                (No1-Korea)</a></li>
+                                                                        <li><a href="#">Khóa điện tử DESSMANN (Đức)</a></li>
+                                                                        <li><a href="#">Khóa điện tử YALE (Hàn Quốc)</a></li>
+                                                                        <li><a href="#">Khóa điện tử H-GANG (Hàn Quốc)</a></li>
+                                                                        <li><a href="#">Khóa điện tử EVERNET (Hàn Quốc)</a></li>
+                                                                        <li><a href="#">Khóa điện tử MILRE (Hàn Quốc)</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <li class="clearfix">
+                                                                    <p class="title_catg">KHÓA CỬA ĐIỆN TỬ CAO CẤP</p>
+                                                                    <ul>
+                                                                        <li><a href="#">Khóa điện tử SAMSUNG (Korea)</a></li>
+                                                                        <li><a href="#">Khóa điện tử GATEMAN
+                                                                                (No1-Korea)</a></li>
+                                                                        <li><a href="#">Khóa điện tử DESSMANN (Đức)</a></li>
+                                                                        <li><a href="#">Khóa điện tử YALE (Hàn Quốc)</a></li>
+                                                                        <li><a href="#">Khóa điện tử H-GANG (Hàn Quốc)</a></li>
+                                                                        <li><a href="#">Khóa điện tử EVERNET (Hàn Quốc)</a></li>
+                                                                        <li><a href="#">Khóa điện tử MILRE (Hàn Quốc)</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <li class="clearfix">
+                                                                    <p class="title_catg">KHÓA CỬA ĐIỆN TỬ CAO CẤP</p>
+                                                                    <ul>
+                                                                        <li><a href="#">Khóa điện tử SAMSUNG (Korea)</a></li>
+                                                                        <li><a href="#">Khóa điện tử GATEMAN
+                                                                                (No1-Korea)</a></li>
+                                                                        <li><a href="#">Khóa điện tử DESSMANN (Đức)</a></li>
+                                                                        <li><a href="#">Khóa điện tử YALE (Hàn Quốc)</a></li>
+                                                                        <li><a href="#">Khóa điện tử H-GANG (Hàn Quốc)</a></li>
+                                                                        <li><a href="#">Khóa điện tử EVERNET (Hàn Quốc)</a></li>
+                                                                        <li><a href="#">Khóa điện tử MILRE (Hàn Quốc)</a></li>
+                                                                    </ul>
+                                                                </li>
+                                                            </div>
+                                                        </div>
+
+
+
+
+
+                                                    </ul>
+                                                </div>
+
+
+
+                                            </div>
+                                            <!--end menu products -->
+                                        </li>
+                                        <li><a href="view/new.html">Tin Tức</a></li>
+                                        <li><a href="view/contact.html">Liên Hệ</a></li>
                                     </ul>
                                     <div class="search_button"><i class="fa fa-search" aria-hidden="true"></i></div>
 
@@ -162,7 +229,43 @@
                 <ul class="menu_mm">
                     <li class="menu_mm"><a href="index.html">Trang Chủ</a></li>
                     <li class="menu_mm"><a href="#">Giới Thiệu</a></li>
-                    <li class="menu_mm"><a href="#">Sản Phẩm</a></li>
+                    <li> <a href="#" data-toggle="collapse" data-target="#sidebar_menu" class="collapsed active">
+                            <span class="nav-label"> Sản Phẩm </span> <span class="fa fa-angle-down"></span>
+                        </a>
+
+                        <ul id="sidebar_menu" class="sidebar_menu collapse">
+                            <li class="default open">
+                                <div class="link">KHÓA CỬA ĐIỆN TỬ<i class="fa fa-chevron-down"></i></div>
+                                <ul class="nav_sidebar">
+                                    <li><a href="#">Khóa cửa Vân Tay - Mã Số</a></li>
+                                    <li><a href="#">Khóa cửa Thẻ Từ - Mã Số</a></li>
+                                    <li><a href="#">Khóa Điện Tử Cửa Kính</a></li>
+                                    <li><a href="#">Khóa Thẻ Từ Khách Sạn HotelLock </a></li>
+                                    <li><a href="#">Khóa Tủ - Locker </a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="link">KHÓA CỬA ĐIỆN TỬ CAO CẤP<i class="fa fa-chevron-down"></i></div>
+                                <ul class="nav_sidebar">
+                                    <li><a href="#">Khóa điện tử SAMSUNG (Korea)</a></li>
+                                    <li><a href="#">Khóa điện tử GATEMAN (No1-Korea)</a></li>
+                                    <li><a href="#">Khóa điện tử DESSMANN (Đức)</a></li>
+                                    <li><a href="#">Khóa điện tử YALE (Hàn Quốc)</a></li>
+                                    <li><a href="#">Khóa điện tử H-GANG (Hàn Quốc)</a></li>
+                                    <li><a href="#">Khóa điện tử EVERNET (Hàn Quốc)</a></li>
+                                    <li><a href="#">Khóa điện tử MILRE (Hàn Quốc)</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="link">KIỂM SOÁT CỬA - CHẤM CÔNG<i class="fa fa-chevron-down"></i></div>
+                                <ul class="nav_sidebar">
+                                    <li><a href="#">Kiểm soát cửa - Access Control</a></li>
+                                    <li><a href="#">Phụ kiện kiểm soát cửa</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </li>
                     <li class="menu_mm"><a href="#">Tin Tức</a></li>
                     <li class="menu_mm"><a href="contact.html">Giới Thiệu</a></li>
                 </ul>
@@ -703,7 +806,7 @@
                         <div class="footer_content">
                             <div class="row">
 
-                                <div class="col-lg-4 footer_col">
+                                <div class="col-md-4 col-lg-4 footer_col">
 
                                     <!-- Footer About -->
                                     <div class="footer_section footer_about">
@@ -727,7 +830,7 @@
 
                                 </div>
 
-                                <div class="col-lg-4 footer_col">
+                                <div class="col-md-4 col-lg-4 footer_col">
 
                                     <!-- Footer Contact -->
                                     <div class="footer_section footer_contact">
@@ -743,7 +846,7 @@
 
                                 </div>
 
-                                <div class="col-lg-4 footer_col">
+                                <div class="col-md-4 col-lg-4 footer_col">
 
                                     <!-- Footer links -->
                                     <div class="footer_section footer_links">

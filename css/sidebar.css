@@ -1,0 +1,80 @@
+.sidebar_menu {
+    width: 100%;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.sidebar_menu .link {
+    cursor: pointer;
+    display: block;
+    padding: 12px 10px 0px 10px;
+    color: black;
+    font-size: 14px;
+    font-weight: 700;
+    position: relative;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.sidebar_menu li:last-child .link {
+    border-bottom: 0;
+}
+
+.sidebar_menu li i {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    font-size: 14px;
+    color: #FFF;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.sidebar_menu li i.fa-chevron-down {
+    left: auto;
+    font-size: 12px;
+}
+
+.sidebar_menu li.open .link {
+    color: orange;
+}
+
+.sidebar_menu li.open i {
+    color: orange;
+}
+
+.sidebar_menu li.open i.fa-chevron-down {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.sidebar_menu li.default .nav_sidebar {
+    display: block;
+}
+.nav_sidebar {
+    display: none;
+    font-size: 12px;
+}
+
+
+.nav_sidebar a {
+    display: block;
+    text-decoration: none;
+    color: #d9d9d9;
+    padding: 11px;
+    padding-left: 2px;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+}
+
+.nav_sidebar a:hover {
+    color: orange;
+}

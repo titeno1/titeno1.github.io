@@ -1,0 +1,120 @@
+
+.title_sp{
+    font-size: 14px;
+	font-weight: bold;
+    color: #384158 !important;
+    cursor: pointer;
+    padding-bottom: 15px;
+     text-align: center;
+}
+.content_menusp {
+    background: rgb(255, 255, 255);
+    width: 900px;
+    position: absolute;
+    top: 50px;
+    right: -350px;
+    border-radius: 3px;
+    padding: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26) !important;
+    -webkit-transition: all .6s ease;
+    transition: all .6s ease;
+    opacity: 0;
+    -webkit-transform-origin: right top 0;
+    -webkit-transform: scale(0);
+    transform-origin: right top 0;
+    transform: scale(0);
+    z-index: 1;
+    -moz-transition: all .6s ease;
+    -ms-transition: all .6s ease;
+    -o-transition: all .6s ease;
+}
+.title_catg{
+    font-size: 16px;
+    padding-bottom: 15px;
+    color: orange;
+}
+
+.content_menusp.active {
+    opacity: 1;
+    -webkit-transform-origin: right top 0;
+    -webkit-transform: scale(1);
+    transition: 0.4s;
+    transform-origin: right top 0;
+    transform: scale(1);
+}
+
+.content_menusp .content_menusp-header {
+    border-bottom: 1px solid #E8E8E8;
+    padding-bottom: 15px;
+}
+
+.content_menusp .content_menusp-header .content_menusp-total {
+    text-align: center;
+    font-size: 14px;
+}
+
+.content_menusp .content_menusp-items {
+    padding-top: 15px;
+}
+
+.content_menusp .content_menusp-items li {
+    margin-bottom: 18px;
+}
+
+.content_menusp .content_menusp-items img {
+    float: left;
+    margin-right: 10px;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.content_menusp .content_menusp-items .item-name {
+    display: block;
+    font-size: 12px;
+    color: black;
+}
+
+.content_menusp .content_menusp-items .item-price {
+    display: block;
+    font-size: 12px;
+    color: red;
+    overflow: hidden;
+}
+
+.content_menusp .content_menusp-items .item-quantity {
+    color: rgb(128, 130, 136);
+    font-size: 12px;
+}
+.content_menusp-items ul li a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #384158;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+}
+
+.content_menusp:after {
+    bottom: 100%;
+    left: 90%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-bottom-color: rgb(10, 10, 10);
+    border-width: 10px;
+    margin-left: -8px;
+}
+
+.cart-icon {
+    color: #515783;
+    font-size: 20px;
+    margin-right: 7px;
+    float: left;
+}
+/* Clear floats after the columns */

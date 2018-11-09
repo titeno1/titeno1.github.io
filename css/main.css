@@ -544,7 +544,8 @@ section
 	z-index: 101;
 	padding-right: 60px;
 	padding-top: 87px;
-	padding-left: 50px;
+    padding-left: 50px;
+    overflow-y: scroll;
 }
 .menu .logo a
 {
@@ -612,10 +613,9 @@ section
 {
 	font-family: 'Roboto', sans-serif;
 	font-size: 14px;
-	text-transform: uppercase;
 	color: rgba(0,0,0,1);
 	font-weight: 700;
-	letter-spacing: 0.1em;
+	letter-spacing: 1px;
 	-webkit-transition: all 200ms ease;
 	-moz-transition: all 200ms ease;
 	-ms-transition: all 200ms ease;
@@ -625,6 +625,14 @@ section
 .menu_nav ul li a:hover
 {
 	color: orange;
+}
+.nav-label{
+    font-size: 14px;
+}
+
+.menu_child li a{
+    font-size: 11px;
+	color: rgba(0,0,0,1);
 }
 .menu .search
 {
@@ -1989,24 +1997,24 @@ ul {
     transform: rotate(180deg);
 }
 
-.accordion li.default .submenu {
+.accordion li.default .navmenu {
     display: block;
 }
 
 /**
-* Submenu
+* navmenu
 -----------------------------*/
-.submenu {
+.navmenu {
     display: none;
     background: rgba(0, 0, 0, .5);
     font-size: 14px;
 }
 
-.submenu li {
+.navmenu li {
     border-bottom: 1px solid #4b4a5e;
 }
 
-.submenu a {
+.navmenu a {
     display: block;
     text-decoration: none;
     color: #d9d9d9;
@@ -2017,7 +2025,7 @@ ul {
     transition: all 0.25s ease;
 }
 
-.submenu a:hover {
+.navmenu a:hover {
     background: orange;
     color: #FFF;
 }
