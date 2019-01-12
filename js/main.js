@@ -302,26 +302,12 @@ $(document).ready(function () {
             'transition-delay': delay
         });
     });
-    // $('#title_sp').hover(function (e) {
-    //     $(".content_menusp").toggleClass("active");
+    $('#title_sp').click(function (e) {
+        e.stopPropagation();
+        $(".content_menusp").toggleClass("active");
        
-
-    // });
-//---nav products---//
-    $("#title_sp").hover(     
-        function() {
-            var $item = $(".content_menusp");
-            $item.addClass('active');
-        }, function() {
-            if(!$item.hasClass('clicked') ){
-                $item.removeClass('active');
-            }
-        }
-    );
-    
-    $("#title_sp").hover(function(){
-        $(this).toggleClass('clicked');
     });
+//---nav products---//
 
 //--- end nav products---//
 
