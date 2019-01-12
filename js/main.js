@@ -437,6 +437,29 @@ $(document).ready(function () {
         }, 600);
         return false;
     });
-
+    // $('.main_nav li').click(function(){
+    //     $(this).addClass('active')
+    //          .siblings()
+    //          .removeClass('active');
+          
+    //   });
+    var cururl = window.location.pathname;
+var curpage = cururl.substr(cururl.lastIndexOf('/') + 1);
+var hash = window.location.hash.substr(1);
+if((curpage == "" || curpage == "/" || curpage == "admin") && hash=="")
+{
+//$("nav .navbar-nav > li:first-child").addClass("active");
+}
+else
+{
+$(".main_nav li").each(function()
+{
+    $(this).removeClass("active");
+});
+if(hash != "")
+$(".main_nav li a[href*='"+hash+"']").parents("li").addClass("active");
+else
+$(".main_nav li a[href*='"+curpage+"']").parents("li").addClass("active");
+}
 
 })
